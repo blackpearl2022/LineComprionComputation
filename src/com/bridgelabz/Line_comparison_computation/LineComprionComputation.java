@@ -24,9 +24,11 @@ public class LineComprionComputation {
         int	y4 = t.nextInt();
         double lengthosecond = Math.sqrt((x2-x1)^2+ (y2-y1)^2);
         System.out.println("lengthof line" +lengthosecond);
-        if(lengthofirst == lengthosecond)
-            System.out.println("Two Lines Are Equal");
+        if(lengthofirst > lengthosecond)
+            System.out.println("Line 1 is Greater Than Line 2");
+        else if(lengthofirst < lengthosecond)
+            System.out.println("Line 2 is Greater Than Line 1");
         else
-            System.out.println("Two Line Are Not Equal");
+            System.out.println("Two Lines are Equal");
     }
 }
